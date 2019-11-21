@@ -2,7 +2,7 @@ import os, argparse, glob
 from PIL import Image
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("-f", "--format", metavar="FORMAT", required=True, help="specify the converted format")
+parser.add_argument("-f", "--format", metavar="FORMAT", required=True, help="specify the target format")
 parser.add_argument("-p", "--pattern", metavar="PATTERN", required=True, help="specify the files pattern")
 parser.add_argument("-c", "--copy", action="store_true", help="specify whether keep old ones or not")
 args = parser.parse_args()
