@@ -14,7 +14,7 @@ _format = args.format
 for filename in glob.iglob(args.pattern):
     print(filename)
     img = Image.open(filename)
-    img.save(os.path.splitext(filename)[0]+'.%s'%_format, _format)
+    img.save(os.path.splitext(filename)[0]+'.%s'%_format.lower(), _format)
     img.close()
     if not (args.copy):
         os.remove(filename)
